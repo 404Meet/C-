@@ -57,14 +57,16 @@
 //     }
 
 //     public static int PrintNfactorial(int o){
-//       if(o==1) return o;
+//       if(o==1) return o; //return 1;
 //       return o*PrintNfactorial(o-1);
 //     }
 //     public static void ReverseArray(int i,ref int[] arr, int n)
 //     {
-//       if(i>=n/2) return;
+//       if(i>=n/2){
+//         return;
+//       }
 //       (arr[i],arr[n-i-1])=(arr[n-i-1],arr[i]); //easy way to swap using tuples. can use a helper function as well
-//       ReverseArray(i+1,ref arr,n-1);
+//       ReverseArray(i+1,ref arr,n);
 //     }
 
 //     public static bool CheckPalindrome(int i,char[] str){  //Time Complexity: n/2
@@ -190,6 +192,7 @@
 //     {
 //       Console.Write(arr[w]);
 //     }
+//     Console.WriteLine();
 
 //     char[] str = Console.ReadLine().ToCharArray();
 //     bool check = CheckPalindrome(0,str);

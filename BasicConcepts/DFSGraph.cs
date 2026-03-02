@@ -78,6 +78,42 @@
 //         var dfs2 = sol.DfsDisconnected(disconnectedGraph);
 //         Console.WriteLine(string.Join(", ", dfs2));
 //     }
+
+
+//     public List<int> DfsFromNode_v1(List<List<int>> adj)
+//     {
+//         int V= adj.Count;
+//         List<int> DFSList = new List<int>();
+//         int[] visited = new int[V];
+//         DFS(0,DFSList,visited,adj);
+//         return DFSList;
+//     }
+
+//     public List<int> DfsDisconnected_v1(List<List<int>> adj)
+//     {
+//         int V= adj.Count;
+//         List<int> DFSList = new List<int>();
+//         int[] visited = new int[V];
+//         for(int i = 0; i < V; i++)
+//         {
+//             if (visited[i]==0)
+//             {
+//                 DFS(i,DFSList,visited,adj);
+//             }
+//         }
+//         return DFSList;
+//     }
+
+//     public void DFS(int node,List<int> DFSList, int[] visited, List<List<int>> adj)
+//     {
+//         visited[node]=1;
+//         DFSList.Add(node);
+//         foreach(int neighbor in adj[node]){
+//             if(visited[neighbor]==0){
+//                 DFS(neighbor,DFSList,visited,adj);
+//             }
+//         }
+//     }
 // }
 
 
